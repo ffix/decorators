@@ -17,9 +17,5 @@ def say_hello_world() -> str:
 if __name__ == '__main__':
     oops_decorator(say_hello_world)()
 
-    # say_hello_world()
-    # print('before!!')
     # say_hello_world1 = oops_decorator(say_hello_world)
     # say_hello_world1()
-    # print('hehe')
-    # say_hello_world()

@@ -21,4 +21,4 @@ def say_hello_friend() -> str:
 
 
 if __name__ == '__main__':
-    print(print())
+    say_hello_world()

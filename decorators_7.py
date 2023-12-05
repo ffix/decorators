@@ -17,12 +17,13 @@ def custom_upper(text):
 def greet(username):
     return f'Hi, {username}'
 
-
-# @apply_transform(str.lower)
-# def greet_lower(username):
-#     return f'Hi, {username}'
+# @apply_transform(custom_upper)
+# def hail(username):
+#     return f'Hail, {username}'
 
 
 if __name__ == '__main__':
     print(greet('Fedor'))
+    # print(hail('Fedor'))
+
 

@@ -15,3 +15,7 @@ def greetings(greet_func: Callable) -> str:
 
 if __name__ == '__main__':
     print(greetings(hail_someone))
+    #print(greetings(say_hi))
+
+    # for func in (hail_someone, say_hi):
+    #     print(greetings(func))
