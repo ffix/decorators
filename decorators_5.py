@@ -1,8 +1,10 @@
+# Синтаксис декоратора
+
+from functools import wraps
 from typing import Callable
 
-
-# как применяют декораторы
 def oops_decorator(func: Callable) -> Callable:
+    @wraps(func)
     def wrapper():
         print('I say oops')
         func()

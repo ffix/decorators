@@ -1,4 +1,6 @@
-# параметризация декораторов
+# Параметризация декораторов
+
+
 def apply_transform(transform):
     def decorator(func):
         def wrapper(username):

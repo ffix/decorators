@@ -1,3 +1,5 @@
+# Декораторы "без сахара"
+
 from typing import Callable
 
 

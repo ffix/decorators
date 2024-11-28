@@ -1,3 +1,5 @@
+# Вложенные функции
+
 from typing import Callable
 
 # run_count = 0

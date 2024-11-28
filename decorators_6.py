@@ -1,8 +1,10 @@
+# Проброс аргументов
+
+from functools import wraps
 from typing import Callable
 
-
-# проброс аргументов декоратору
 def enclose_with_tags(func: Callable) -> Callable:
+    @wraps(func)
     def wrapper(*args, **kwargs):
         result = func(*args, **kwargs)
         return '<Entity>{}</Entity>'.format(result)
