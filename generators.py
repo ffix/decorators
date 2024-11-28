@@ -7,22 +7,30 @@ def numbers(num):
 def numbers1(num):
     return list(range(num))
 
-def numnbers2(num):
+def numbers2(num):
     return [i for i in range(num)]
 
 def numbers3(num):
-    lst = 0
+    lst = []
     i = 0
     while i < num:
         lst.append(i)
+        i+=1
     return lst
 
-print(list(numbers(10)))
 
-# for i in numbers(10):
-#     print(i+100)
-
-
-# def numbers(num):
+# def numbers_g(num):
 #     for i in range(num):
 #         yield i
+
+if __name__ == "__main__":
+    print(list(numbers(10)))
+    print(list(numbers1(10)))
+    print(list(numbers2(10)))
+    print(list(numbers3(10)))
+
+    # print(numbers_g(10))
+    # for i in numbers_g(10):
+    #     print(i+100)
+
+
